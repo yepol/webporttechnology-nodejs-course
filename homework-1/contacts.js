@@ -16,7 +16,7 @@ const listContacts = async () => {
     try {
         return JSON.parse(contacts);
     } catch (e) {
-        return e;
+       throw new Error('Json parse error');
     }
 }
 
